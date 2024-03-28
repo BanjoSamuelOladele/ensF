@@ -53,7 +53,7 @@ function App() {
   return (
     <div className="flex flex-col bg-slate-600 w-full h-screen p-2 gap-y-4">
       <div className='flex justify-between p-4'>
-        <h4 className='text-[20px] font-bold bg-gradient-to-r from-purple-300 to-red-500 bg-clip-text text-transparent'>SoftChat</h4>
+        <h4 className='text-[20px] font-bold bg-gradient-to-r from-purple-300 to-red-500 bg-clip-text text-transparent'>bad man chats</h4>
         <w3m-button />
       </div>
       

@@ -37,7 +37,6 @@ function Register() {
         if (receipt.status) {
             return console.log("register successful!");
         }
-
         console.log("register failed!");
     } catch (error) {
         console.log(error);
@@ -83,7 +82,7 @@ function Register() {
   return (
     <div className='w-4/12 m-auto rounded-md p-5 bg-white shadow flex flex-col gap-y-2'>
         <form className='flex flex-col gap-y-4 w-9/12 m-auto'>
-            <h4 className='bg-gradient-to-r from-purple-300 to-red-500 bg-clip-text text-transparent font-bold text-[20px] text-center'>Register and chat with baddies</h4>
+            <h4 className='bg-gradient-to-r from-green-300 to-orange-500 bg-clip-text text-transparent font-bold text-[20px] text-center'>Register and chat with baddies</h4>
             {img && <img className='w-40 h-40 rounded-full m-auto' src={URL.createObjectURL(img)} alt="" />}
             <input type="file" accept='image/*' hidden id='img' onChange={(e) => setImg(e.target.files[0])}  />
             {!img && <label className='rounded-full m-auto bg-slate-300 p-2' htmlFor="img">
@@ -98,7 +97,7 @@ function Register() {
                 onChange={(e) => {setName(e.target.value)}}
             />
 
-            <button className='p-2 bg-gradient-to-r from-purple-300 to-red-500 rounded-md font-bold text-white' onClick={handleSubmit}>Register</button>
+            <button className='p-2 bg-gradient-to-r from-purple-300 to-red-500 rounded-md font-bold text-black' onClick={handleSubmit}>Register</button>
             {isLoading && <span className='m-auto'><FaSpinner className='animate-spin' size={20}/></span>}
         </form>
     </div>

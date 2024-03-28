@@ -28,7 +28,7 @@ function Register() {
     const contract = getChatContract(signer);
 
     try {
-        const transaction = await contract.registerEns(name, avatar);
+        const transaction = await contract.register(name, avatar);
         console.log("transaction: ", transaction);
         const receipt = await transaction.wait();
 

@@ -51,9 +51,9 @@ function App() {
     console.log(ens)
 
   return (
-    <div className="flex flex-col bg-slate-600 w-full h-screen p-2 gap-y-4">
+    <div className="flex flex-col bg-yellown-600 w-full h-screen p-2 gap-y-4">
       <div className='flex justify-between p-4'>
-        <h4 className='text-[20px] font-bold bg-gradient-to-r from-purple-300 to-red-500 bg-clip-text text-transparent'>bad man chats</h4>
+        <h4 className='text-[20px] font-bold bg-gradient-to-r from-blue-300 to-orange-500 bg-clip-text text-transparent'>bad man chats</h4>
         <w3m-button />
       </div>
       

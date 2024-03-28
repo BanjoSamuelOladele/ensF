@@ -28,6 +28,10 @@ function Register() {
     const contract = getChatContract(signer);
 
     try {
+        // const tx = await contract.checkIfUsernameAlreadyExist(name);
+
+        // console.log("transaction result is ::", tx);
+
         const transaction = await contract.register(name, avatar);
         console.log("transaction: ", transaction);
         const receipt = await transaction.wait();
@@ -80,7 +84,7 @@ function Register() {
   };
 
   return (
-    <div className='w-4/12 m-auto rounded-md p-5 bg-white shadow flex flex-col gap-y-2'>
+    <div className='w-4/12 m-auto rounded-md p-5 bg-green shadow flex flex-col gap-y-2'>
         <form className='flex flex-col gap-y-4 w-9/12 m-auto'>
             <h4 className='bg-gradient-to-r from-green-300 to-orange-500 bg-clip-text text-transparent font-bold text-[20px] text-center'>Register and chat with baddies</h4>
             {img && <img className='w-40 h-40 rounded-full m-auto' src={URL.createObjectURL(img)} alt="" />}
